@@ -1,0 +1,10 @@
+* {
+  font-size: 50px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.firstNum,
+.secondNum {
+  width: 100px;
+  height: 100px;
+}
