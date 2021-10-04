@@ -1,0 +1,61 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: lightgrey;
+}
+
+header {
+  /* indica el valor de la propietat position i més propietats, si fan falta */
+  background-color: #9acd32;
+  margin-top: 30px;
+  height: 140px;
+}
+
+header img {
+  /* indica el valor de la propietat position i més propietats, si fan falta */
+  position: absolute;
+  top: 70px;
+  left: 50px;
+}
+
+ul#menu {
+  /* indica el valor de la propietat position i més propietats, si fan falta */
+  list-style-type: none;
+  position: absolute;
+  top: 70px;
+  left: 350px;
+}
+
+ul#menu li {
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  display: inline;
+  margin-right: 10px;
+  padding: 5px;
+}
+
+div {
+  /* indica el valor de la propietat position i més propietats, si fan falta */
+  border: 1px solid green;
+  margin: 50px;
+  max-width: 1000px;
+}
+
+#scissors {
+  position: absolute;
+  left: 360px;
+  z-index: -1;
+}
+
+div > h1 {
+  /* indica el valor de la propietat position i més propietats, si fan falta */
+  color: white;
+  font-size: 2em;
+  display: inline;
+  position: absolute;
+  margin: 50px;
+  top: 400px;
+  max-width: 500px;
+}
