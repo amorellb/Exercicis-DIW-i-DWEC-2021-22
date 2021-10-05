@@ -1,3 +1,5 @@
+"use strict";
+
 const firstNum = document.querySelector(".firstNum");
 const secondNum = document.querySelector(".secondNum");
 const plusSymbol = document.querySelector(".plusSymbol");
