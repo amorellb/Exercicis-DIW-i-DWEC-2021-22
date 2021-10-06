@@ -31,10 +31,22 @@ export const whatsBeforeA = function (str, resElem) {
   return str.slice(0, str.toLowerCase().indexOf('a'));
 };
 
-// Exercise 5
+// Exercise 5 (indexOf, lastIndexOf)
 export const getFirstAndLastAOcc = function (str, resElem) {
   clearResult(resElem);
   const firstOcc = str.indexOf('a');
   const lastOcc = str.lastIndexOf('a');
   return `First occ: ${firstOcc} <br> Last occ: ${lastOcc}`;
+};
+
+// Exercise 6 (replaceAll)
+export const deleteSubstring = function (str, resElem) {
+  clearResult(resElem);
+  return str.replaceAll('la', '');
+};
+
+// Exercise 7 (replaceAll)
+export const replaceByAStar = function (str, resElem) {
+  clearResult(resElem);
+  return str.replaceAll('la', '⭐️');
 };

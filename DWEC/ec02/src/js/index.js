@@ -15,6 +15,10 @@ const btnCountA = document.querySelector('.btnCountA');
 const btnBeforeA = document.querySelector('.btnBeforeA');
 // Exercise 5
 const btnFirstAndLastAOcc = document.querySelector('.btnFirstAndLastAOcc');
+// Exercise 6
+const btnDelSubstring = document.querySelector('.btnDelSubstring');
+// Exercise 7
+const btnReplaceByAStar = document.querySelector('.btnReplaceByAStar');
 
 // Exercise 1
 btnIsEmptyString.addEventListener('click', e => {
@@ -68,5 +72,27 @@ btnFirstAndLastAOcc.addEventListener('click', e => {
     btnFirstAndLastAOcc,
     resultOutput,
     Functions.getFirstAndLastAOcc(inputString.value, resultOutput)
+  );
+});
+
+// Exercise 6
+btnDelSubstring.addEventListener('click', e => {
+  e.preventDefault();
+  addResultStyle(resultOutput);
+  allInOne(
+    btnDelSubstring,
+    resultOutput,
+    Functions.deleteSubstring(inputString.value, resultOutput)
+  );
+});
+
+// Exercise 7
+btnReplaceByAStar.addEventListener('click', e => {
+  e.preventDefault();
+  addResultStyle(resultOutput);
+  allInOne(
+    btnReplaceByAStar,
+    resultOutput,
+    Functions.replaceByAStar(inputString.value, resultOutput)
   );
 });
