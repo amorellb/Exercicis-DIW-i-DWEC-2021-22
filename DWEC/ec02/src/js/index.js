@@ -19,6 +19,10 @@ const btnFirstAndLastAOcc = document.querySelector('.btnFirstAndLastAOcc');
 const btnDelSubstring = document.querySelector('.btnDelSubstring');
 // Exercise 7
 const btnReplaceByAStar = document.querySelector('.btnReplaceByAStar');
+// Exercise 8
+const btnCapICua = document.querySelector('.btnCapICua');
+// Exercise 9
+const btnDelSpaces = document.querySelector('.btnDelSpaces');
 
 // Exercise 1
 btnIsEmptyString.addEventListener('click', e => {
@@ -94,5 +98,27 @@ btnReplaceByAStar.addEventListener('click', e => {
     btnReplaceByAStar,
     resultOutput,
     Functions.replaceByAStar(inputString.value, resultOutput)
+  );
+});
+
+// Exercise 8
+btnCapICua.addEventListener('click', e => {
+  e.preventDefault();
+  addResultStyle(resultOutput);
+  allInOne(
+    btnCapICua,
+    resultOutput,
+    Functions.getCapICua(inputString.value, resultOutput)
+  );
+});
+
+// Exercise 9
+btnDelSpaces.addEventListener('click', e => {
+  e.preventDefault();
+  addResultStyle(resultOutput);
+  allInOne(
+    btnDelSpaces,
+    resultOutput,
+    Functions.deleteSpaces(inputString.value, resultOutput)
   );
 });

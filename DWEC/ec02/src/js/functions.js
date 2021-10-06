@@ -50,3 +50,18 @@ export const replaceByAStar = function (str, resElem) {
   clearResult(resElem);
   return str.replaceAll('la', '⭐️');
 };
+
+// Exercise 8 (substr; slice)
+export const getCapICua = function (str, resElem) {
+  clearResult(resElem);
+  const firstLetter = str.substr(0, 1);
+  // const firstLetter = str.slice(0, 1);
+  const capICuaStr = `${firstLetter}${str}${firstLetter}`;
+  return capICuaStr;
+};
+
+// Exercise 9 (replaceAll)
+export const deleteSpaces = function (str, resElem) {
+  clearResult(resElem);
+  return str.replaceAll(' ', '');
+};
