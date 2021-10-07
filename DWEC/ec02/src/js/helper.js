@@ -1,3 +1,10 @@
+// export const clearInput = function (elem) {
+//   elem.addEventListener('load', e => {
+//     e.target.value = '';
+//     console.log(e.target);
+//   });
+// };
+
 export const clearResult = function (elem) {
   elem.innerHTML = '';
 };
@@ -17,5 +24,5 @@ export const addResultStyle = function (elem) {
 };
 
 export const isEmptyInput = function (str) {
-  if (!str || str === '' || str === null) return false;
+  if (!str || str === null || str === '') return true;
 };

@@ -25,6 +25,8 @@ const btnCapICua = document.querySelector('.btnCapICua');
 const btnDelSpaces = document.querySelector('.btnDelSpaces');
 // Exercise 10
 
+// clearInput(inputString);
+
 // Exercise 1
 btnIsEmptyString.addEventListener('click', e => {
   e.preventDefault();
