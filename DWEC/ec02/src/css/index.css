@@ -48,3 +48,7 @@ input {
   padding: 50px;
   font-size: 50px;
 }
+
+h2 span {
+  font-weight: normal;
+}

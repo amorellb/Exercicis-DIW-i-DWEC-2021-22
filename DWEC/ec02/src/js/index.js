@@ -23,6 +23,7 @@ const btnReplaceByAStar = document.querySelector('.btnReplaceByAStar');
 const btnCapICua = document.querySelector('.btnCapICua');
 // Exercise 9
 const btnDelSpaces = document.querySelector('.btnDelSpaces');
+// Exercise 10
 
 // Exercise 1
 btnIsEmptyString.addEventListener('click', e => {
@@ -122,3 +123,5 @@ btnDelSpaces.addEventListener('click', e => {
     Functions.deleteSpaces(inputString.value, resultOutput)
   );
 });
+
+// Exercise 10
