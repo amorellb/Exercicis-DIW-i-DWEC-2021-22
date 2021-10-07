@@ -67,4 +67,16 @@ export const deleteSpaces = function (str, resElem) {
   return isEmptyInput(str) ? 'Empty string' : str.replaceAll(' ', '');
 };
 
-// Exercise 10
+// Exercise 10 (split; filter; join)
+export const addDash = function (str, resElem) {
+  clearResult(resElem);
+  const separatedWords = str.split(' ').filter(word => word !== '');
+  return isEmptyInput(str) ? 'Empty string' : separatedWords.join('-');
+};
+
+// Exercise 11 (split; map; slice; join)
+export const getAcronym = function (str, resElem) {
+  clearResult(resElem);
+  const acronym = str.split(' ').map(word => word.slice(0, 1));
+  return isEmptyInput(str) ? 'Empty string' : acronym.join('').toUpperCase();
+};

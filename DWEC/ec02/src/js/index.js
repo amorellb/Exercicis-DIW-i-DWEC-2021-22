@@ -24,6 +24,9 @@ const btnCapICua = document.querySelector('.btnCapICua');
 // Exercise 9
 const btnDelSpaces = document.querySelector('.btnDelSpaces');
 // Exercise 10
+const btnAddDash = document.querySelector('.btnAddDash');
+// Exercise 11
+const btnAcronym = document.querySelector('.btnAcronym');
 
 // clearInput(inputString);
 
@@ -127,3 +130,23 @@ btnDelSpaces.addEventListener('click', e => {
 });
 
 // Exercise 10
+btnAddDash.addEventListener('click', e => {
+  e.preventDefault();
+  addResultStyle(resultOutput);
+  allInOne(
+    btnAddDash,
+    resultOutput,
+    Functions.addDash(inputString.value, resultOutput)
+  );
+});
+
+// Exercise 11
+btnAcronym.addEventListener('click', e => {
+  e.preventDefault();
+  addResultStyle(resultOutput);
+  allInOne(
+    btnAcronym,
+    resultOutput,
+    Functions.getAcronym(inputString.value, resultOutput)
+  );
+});
