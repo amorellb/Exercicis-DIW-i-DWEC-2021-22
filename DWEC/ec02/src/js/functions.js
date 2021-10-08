@@ -115,19 +115,19 @@ export const isNumber = function (str, resElem) {
   return isNaN(number) ? 'Not a number' : 'Is a number';
 };
 
-// Exercise 15
+// Exercise 15 (split)
 export const getNonDecimalPart = function (str, resElem) {
   clearResult(resElem);
   return str.split('.')[0];
 };
 
-// Exercise 16
+// Exercise 16 (split)
 export const getDecimalPart = function (str, resElem) {
   clearResult(resElem);
   return str.split('.')[1];
 };
 
-// Exercise 17
+// Exercise 17 (toString; split; slice)
 export const divideAndRound = function (str, resElem) {
   clearResult(resElem);
   const number = Number(str);
