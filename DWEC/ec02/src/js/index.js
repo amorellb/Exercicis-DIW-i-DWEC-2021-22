@@ -29,6 +29,16 @@ const btnAddDash = document.querySelector('.btnAddDash');
 const btnAcronym = document.querySelector('.btnAcronym');
 // Exercise 12
 const btnValidateEmail = document.querySelector('.btnValidateEmail');
+// Exercise 13
+const btnCheckNumberSign = document.querySelector('.btnCheckNumberSign');
+// Exercise 14
+const btnIsNumber = document.querySelector('.btnIsNumber');
+// Exercise 15
+const btnNonDecimalPart = document.querySelector('.btnNonDecimalPart');
+// Exercise 16
+const btnDecimalPart = document.querySelector('.btnDecimalPart');
+// Exercise 17
+const btnDivideAndRound = document.querySelector('.btnDivideAndRound');
 
 // clearInput(inputString);
 
@@ -161,5 +171,49 @@ btnValidateEmail.addEventListener('click', e => {
     btnValidateEmail,
     resultOutput,
     Functions.validateEmail(inputString.value, resultOutput)
+  );
+});
+
+// Exercise 13
+btnCheckNumberSign.addEventListener('click', e => {
+  e.preventDefault();
+  addResultStyle(resultOutput);
+  allInOne(
+    btnCheckNumberSign,
+    resultOutput,
+    Functions.checkNumberSign(inputString.value, resultOutput)
+  );
+});
+
+// Exercise 14
+btnIsNumber.addEventListener('click', e => {
+  e.preventDefault();
+  addResultStyle(resultOutput);
+  allInOne(
+    btnIsNumber,
+    resultOutput,
+    Functions.isNumber(inputString.value, resultOutput)
+  );
+});
+
+// Exercise 15
+btnNonDecimalPart.addEventListener('click', e => {
+  e.preventDefault();
+  addResultStyle(resultOutput);
+  allInOne(
+    btnNonDecimalPart,
+    resultOutput,
+    Functions.getNonDecimalPart(inputString.value, resultOutput)
+  );
+});
+
+// Exercise 16
+btnDivideAndRound.addEventListener('click', e => {
+  e.preventDefault();
+  addResultStyle(resultOutput);
+  allInOne(
+    btnDivideAndRound,
+    resultOutput,
+    Functions.divideAndRound(inputString.value, resultOutput)
   );
 });

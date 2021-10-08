@@ -81,7 +81,7 @@ export const getAcronym = function (str, resElem) {
   return isEmptyInput(str) ? 'Empty string' : acronym.join('').toUpperCase();
 };
 
-// Exercise 12
+// Exercise 12 (slice; filter; indexOf; split; includes)
 export const validateEmail = function (str, resElem) {
   clearResult(resElem);
 
@@ -97,4 +97,42 @@ export const validateEmail = function (str, resElem) {
   if (str.indexOf('@') > str.indexOf(indexExt))
     return 'Not a valid email format';
   return 'Your email is correctly formatted 🥳';
+};
+
+// Exercise 13 (slice)
+export const checkNumberSign = function (str, resElem) {
+  clearResult(resElem);
+  if (str === '0') return 'Your number is equal to 0';
+  return str.slice(0, 1) === '-'
+    ? 'Your number is negative'
+    : 'Your number is positive';
+};
+
+// Exercise 14 (isNaN)
+export const isNumber = function (str, resElem) {
+  clearResult(resElem);
+  const number = Number(str);
+  return isNaN(number) ? 'Not a number' : 'Is a number';
+};
+
+// Exercise 15
+export const getNonDecimalPart = function (str, resElem) {
+  clearResult(resElem);
+  return str.split('.')[0];
+};
+
+// Exercise 16
+export const getDecimalPart = function (str, resElem) {
+  clearResult(resElem);
+  return str.split('.')[1];
+};
+
+// Exercise 17
+export const divideAndRound = function (str, resElem) {
+  clearResult(resElem);
+  const number = Number(str);
+  const divNumber = number / 19;
+  const decPart = divNumber.toString().split('.')[1];
+  const decPartRounded = decPart.slice(0, 3);
+  return `${divNumber.toString().split('.')[0]}.${decPartRounded}`;
 };
