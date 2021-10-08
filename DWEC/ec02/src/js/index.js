@@ -27,6 +27,8 @@ const btnDelSpaces = document.querySelector('.btnDelSpaces');
 const btnAddDash = document.querySelector('.btnAddDash');
 // Exercise 11
 const btnAcronym = document.querySelector('.btnAcronym');
+// Exercise 12
+const btnValidateEmail = document.querySelector('.btnValidateEmail');
 
 // clearInput(inputString);
 
@@ -148,5 +150,16 @@ btnAcronym.addEventListener('click', e => {
     btnAcronym,
     resultOutput,
     Functions.getAcronym(inputString.value, resultOutput)
+  );
+});
+
+// Exercise 12
+btnValidateEmail.addEventListener('click', e => {
+  e.preventDefault();
+  addResultStyle(resultOutput);
+  allInOne(
+    btnValidateEmail,
+    resultOutput,
+    Functions.validateEmail(inputString.value, resultOutput)
   );
 });

@@ -80,3 +80,21 @@ export const getAcronym = function (str, resElem) {
   const acronym = str.split(' ').map(word => word.slice(0, 1));
   return isEmptyInput(str) ? 'Empty string' : acronym.join('').toUpperCase();
 };
+
+// Exercise 12
+export const validateEmail = function (str, resElem) {
+  clearResult(resElem);
+
+  const serverExts = ['.net', '.org', '.com'];
+  const serverExt = str.slice(-4);
+  const [indexExt] = serverExts.filter(ext => {
+    return str.indexOf(ext) > -1;
+  });
+
+  if (str.split('@').length > 2) return 'There are more than one @';
+  if (!serverExts.includes(serverExt))
+    return 'You are using a non valid server extension';
+  if (str.indexOf('@') > str.indexOf(indexExt))
+    return 'Not a valid email format';
+  return 'Your email is correctly formatted 🥳';
+};
