@@ -45,6 +45,15 @@
   flex-grow: 1;
 }
 
+/* .card .text:nth-child(1) {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.card .text:nth-child(2) {
+flex-grow: 1;
+} */
+
 .card .text > button {
   background: #1d486b;
   border: 0;
