@@ -20,7 +20,8 @@
 
 .card img {
   /*************  ADD YOUR CODE HERE ************/
-  width: 13em;
+  width: inherit;
+  /* flex-shrink: 1; */
   /************** END OF YOUR CODE ***************/
 }
 
